@@ -11,7 +11,8 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-generator": "^4.13.4",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "node-sass": "^3.8.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
