@@ -1,0 +1,17 @@
+{
+  "name": "bower",
+  "description": "nodetutorial",
+  "main": "index.js",
+  "authors": [
+    "vogtn <vogtn@uw.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vogtn/Sande-NodeWorkshop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
