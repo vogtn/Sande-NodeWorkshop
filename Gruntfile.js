@@ -6,9 +6,19 @@ module.exports = function(grunt){
           'public/stylesheets/style.css':'sass/style.scss'
         }
       }
+    },
+    watch:{
+      source:{
+        files: ['sass/**/*.scss', 'views/**/*.jade'],
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
+      }
     }
 
   });
-  grunt.loadNpmTasks('grunt-sass')
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.registerTast('default',['sass']);
 };
