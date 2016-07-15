@@ -1,7 +1,14 @@
 module.exports = function(grunt){
   grunt.initConfig({
-
+    sass:{
+      dist:{
+        files{
+          'public/stylesheets/style.css':'sass/style.scss'
+        }
+      }
+    }
 
   });
-  grunt.loadNpmTasks('<package>')
+  grunt.loadNpmTasks('grunt-sass')
+  grunt.registerTast('default',['sass']);
 };
