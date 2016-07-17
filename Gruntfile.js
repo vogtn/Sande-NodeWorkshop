@@ -5,6 +5,11 @@ module.exports = function(grunt){
         files{
           'public/stylesheets/style.css':'sass/style.scss'
         }
+      },
+      options:{
+        includePaths:[
+          './bower_components/css-calc-mixin'
+        ]
       }
     },
     watch:{

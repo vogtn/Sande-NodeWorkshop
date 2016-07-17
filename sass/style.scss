@@ -3,3 +3,21 @@ $color: orange;
 body{
   background-color: $color;
 }
+
+@import "css-calc-mixin";
+
+.block{
+  @include calc(width, 220px);
+}
+
+.block{
+  @include calc(margin, 220px, 0);
+}
+
+.block{
+  @include calc(width, 220px, true, 0);
+}
+
+.block{
+  @include calc(width, 220px, true, 0, 50%, '+');
+}
